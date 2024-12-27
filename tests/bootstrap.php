@@ -14,9 +14,11 @@ ini_set( 'display_errors', 1 );
 
 //print sprintf( "\n%-20s%s\n", "Mermaid: ", $version );
 
+$basePath = getenv( 'MW_INSTALL_PATH' ) !== false ? getenv( 'MW_INSTALL_PATH' ) : __DIR__ . '/../../..';
+
 if ( is_readable( $path = __DIR__ . '/../vendor/autoload.php' ) ) {
 	print sprintf( "%-20s%s\n", "MediaWiki:", $GLOBALS['wgVersion'] . " (Extension vendor autoloader)" );
-} elseif ( is_readable( $path = __DIR__ . '/../../../vendor/autoload.php' ) ) {
+} elseif ( is_readable( $path = $basePath . '/vendor/autoload.php' ) ) {
 	print sprintf( "%-20s%s\n", "MediaWiki:", $GLOBALS['wgVersion'] . " (MediaWiki vendor autoloader)" );
 } else {
 	die( 'To run tests it is required that packages are installed using Composer.' );
