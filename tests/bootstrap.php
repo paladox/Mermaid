@@ -28,6 +28,4 @@ $dateTimeUtc = new \DateTime( 'now', new \DateTimeZone( 'UTC' ) );
 print sprintf( "\n%-20s%s\n\n", "Execution time:", $dateTimeUtc->format( 'Y-m-d h:i' ) );
 
 $autoloader = require $path;
-$autoloader->addPsr4( 'Mermaid\\Tests\\', __DIR__ . '/phpunit/Unit' );
-$autoloader->addPsr4( 'Mermaid\\Tests\\Integration\\', __DIR__ . '/phpunit/Integration' );
-unset( $autoloader );
+$autoloader->addPsr4( 'Mermaid\\Tests\\', __DIR__ . '/phpunit' );
