@@ -6,7 +6,7 @@ namespace Mermaid\Tests;
 
 class TestingConsts
 {
-	const EXTRACTOR_VALUE_MAP = [
+	public const EXTRACTOR_VALUE_MAP = [
 		[
 			['sequenceDiagram...', 'config.theme=foo'],
 			[['theme' => 'foo'], ['sequenceDiagram...']],
