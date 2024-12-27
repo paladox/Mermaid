@@ -4,9 +4,9 @@ if ( PHP_SAPI !== 'cli' && PHP_SAPI !== 'phpdbg' ) {
 	die( 'Not an entry point' );
 }
 
-error_reporting( E_ALL | E_STRICT );
+error_reporting( -1 );
 date_default_timezone_set( 'UTC' );
-ini_set( 'display_errors', 1 );
+ini_set( 'display_errors', '1' );
 
 //if ( !class_exists( 'Mermaid' ) || ( $version = Mermaid::getVersion() ) === null ) {
 //	die( "\nMermaid is not available, please check your Composer or LocalSettings (wfLoadExtension).\n" );
