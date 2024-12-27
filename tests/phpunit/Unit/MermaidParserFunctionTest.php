@@ -3,6 +3,7 @@
 namespace Mermaid\Tests;
 
 use Mermaid\MermaidParserFunction;
+use Mermaid\Tests\TestingConsts;
 
 /**
  * @covers \Mermaid\MermaidParserFunction
