@@ -3,6 +3,7 @@
 namespace Mermaid\Tests;
 
 use Mermaid\MermaidConfigExtractor;
+use Mermaid\Tests\TestingConsts;
 
 /**
  * @covers \Mermaid\MermaidConfigExtractor
