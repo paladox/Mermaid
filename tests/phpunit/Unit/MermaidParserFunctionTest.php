@@ -3,7 +3,6 @@
 namespace Mermaid\Tests;
 
 use Mermaid\MermaidParserFunction;
-use Mermaid\Tests\TestingConsts;
 
 /**
  * @covers \Mermaid\MermaidParserFunction
@@ -14,7 +13,7 @@ use Mermaid\Tests\TestingConsts;
  *
  * @author mwjames
  */
-class MermaidParserFunctionTest extends \PHPUnit_Framework_TestCase
+class MermaidParserFunctionTest extends \PHPUnit\Framework\TestCase
 {
 	public function testCanConstruct()
 	{
