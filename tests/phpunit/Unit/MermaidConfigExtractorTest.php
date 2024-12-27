@@ -3,7 +3,6 @@
 namespace Mermaid\Tests;
 
 use Mermaid\MermaidConfigExtractor;
-use Mermaid\Tests\TestingConsts;
 
 /**
  * @covers \Mermaid\MermaidConfigExtractor
@@ -14,7 +13,7 @@ use Mermaid\Tests\TestingConsts;
  *
  * @author howlowck
  */
-class MermaidConfigExtractorTest extends \PHPUnit_Framework_TestCase
+class MermaidConfigExtractorTest extends \PHPUnit\Framework\TestCase
 {
 	/**
 	 * @dataProvider caseProvider
