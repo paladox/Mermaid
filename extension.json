@@ -24,7 +24,8 @@
 		"Mermaid\\": "src/"
 	},
 	"TestAutoloadNamespaces": {
- 		"Mermaid\\Tests\\": "tests/phpunit/"
+ 		"Mermaid\\Tests\\": "tests/phpunit/Unit/",
+		"Mermaid\\Tests\\Integration\\": "tests/phpunit/Integration/"
  	},
 	"ResourceModules": {
 		"ext.mermaid": {
@@ -63,7 +64,6 @@
 			"value": "forest"
 		}
 	},
-	"load_composer_autoloader": true,
 	"config_prefix": "mermaidg",
 	"manifest_version": 2
 }
