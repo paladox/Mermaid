@@ -63,6 +63,7 @@
 			"value": "forest"
 		}
 	},
+	"load_composer_autoloader": true,
 	"config_prefix": "mermaidg",
 	"manifest_version": 2
 }
